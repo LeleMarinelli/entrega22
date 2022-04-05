@@ -1,5 +1,5 @@
 const MemoryContainer = require("../contenedores/MemoryContainer");
-const { createUserItem } = require("../../utils/index");
+const { createProduct } = require("../../utils/index");
 
 class MockApi extends MemoryContainer {
   constructor(resource) {
@@ -17,10 +17,10 @@ class MockApi extends MemoryContainer {
   }
 
   createItem(resource) {
-    const newItems = {
-      user: createUserItem(),
+    const newProduct = {
+      product: createProduct(),
     };
-    return newItems[resource];
+    return newProduct[resource];
   }
 }
 

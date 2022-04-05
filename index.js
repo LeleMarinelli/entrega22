@@ -17,8 +17,8 @@ const createTableMemoria = require("./tables/tableMemoria");
 const createTableArchivo = require("./tables/tableArchivo");
 
 // CONTENEDORES
-const ContenedorMemoria = require("./contenedores/ContenedorMemoria.js");
-const ContenedorArchivo = require("./contenedores/ContenedorArchivo.js");
+const ContenedorMemoria = require("./models/contenedores/ContenedorMemoria.js");
+const ContenedorArchivo = require("./models/contenedores/ContenedorArchivo.js");
 
 const productosApi = new ContenedorMemoria(knex, "memoria");
 const mensajesApi = new ContenedorArchivo(knexSq, "archivo");

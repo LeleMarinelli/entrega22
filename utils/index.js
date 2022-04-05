@@ -1,16 +1,15 @@
-const faker = require('faker');
+const faker = require("faker");
 
-faker.locale = 'es';
+faker.locale = "es";
 
-const createUserItem = () => {
+const createProduct = () => {
   return {
-    nombre: faker.name.firstName(),
-    email: faker.internet.email(),
-    website: faker.internet.url(),
-    image: faker.image.avatar()
-  }
+    title: faker.commerce.productName(),
+    price: faker.commerce.price(),
+    thumbnail: faker.image.image(),
+  };
 };
 
 module.exports = {
-  createUserItem
-}
+  createProduct,
+};
