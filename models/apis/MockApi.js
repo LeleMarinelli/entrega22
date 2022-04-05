@@ -6,7 +6,7 @@ class MockApi extends MemoryContainer {
     super(resource);
   }
 
-  populate(qty = 50) {
+  populate(qty = 5) {
     const mockedItems = [];
     for (let i = 1; i <= +qty; i++) {
       const newItem = this.createItem(this.resource);
